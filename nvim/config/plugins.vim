@@ -9,6 +9,7 @@ Plug 'junegunn/fzf.vim'        " fzf for vim
 Plug 'tpope/vim-commentary'    " commenting text
 Plug 'tpope/vim-fugitive'      " git wrapper
 Plug 'tpope/vim-abolish'       " Smart replace, abbreviations, convert case
+Plug 'christoomey/vim-tmux-navigator'
 
 " End of vim-plug initialization
 call plug#end()
