@@ -296,3 +296,60 @@ git push orgin master
 git push origin master
 cd ..
 nvim .bashrc 
+sudo apt install node
+sudo apt update
+sudo apt upgrade-all
+sudo apt upgrade
+sudo apt install nodejs npm
+npm install -g neovim
+sudo npm install -g neovim
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+nvm --version
+cd ..
+nvim .bashrc 
+source .bashrc
+nvm --version
+nvm install node # "node" is an alias for the latest version
+node -v
+npm -v
+exit
+tmux a
+nvim .config/bash/
+ll
+nvim .
+rm dotfiles/.bashrc dotfiles/.bash_profile 
+mv .config/bash/bashrc dotfiles/bash/.bashrc
+mkdir dotfiles/bash/
+mv .config/bash/bashrc dotfiles/bash/.bashrc
+mv .bash_history dotfiles/bash/.bash_history
+touch dotfiles/bash/.bash_aliases
+ls -ladotfiles/bash/
+ls -la dotfiles/bash/
+mv .bash_profile dotfiles/bash/.bash_profile
+nvim dotfiles/bash/.bash_profile
+ls .config/
+rm -r .config/bash/
+ll
+ln -s ~/dotfiles/bash/.bashrc ~/.bashrc
+ln -s ~/dotfiles/bash/.bash_aliases ~/.bash_aliases
+ln -s ~/dotfiles/bash/.bash_profile ~/.bash_profile
+ln -s ~/dotfiles/bash/.bash_history ~/.bash_history
+rm -r .bashrc 
+ln -s ~/dotfiles/bash/.bashrc ~/.bashrc
+ln -s ~/dotfiles/bash/.bash_aliases ~/.bash_aliases
+ln -s ~/dotfiles/bash/.bash_profile ~/.bash_profile
+nvim .
+cd dotfiles/
+git add .
+git status
+git commit -m "mostly bash config changes"
+git push origin master
+nvim
+ta
+tl
+ts
+source .bashrc
+tns The New One
+tns thenewone
+tn
+tmux new-session
