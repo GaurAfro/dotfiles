@@ -4,6 +4,11 @@ nnoremap <leader>R :vsplit \| terminal python3 %<CR>    " Leader + R to split wi
 tnoremap <leader>t <C-\><C-n>:if &buftype == 'terminal' \| bd! \| endif<CR>    " Leader + t to close terminal in both terminal and normal modes
 nnoremap <leader>t :if &buftype == 'terminal' \| bd! \| endif<CR>
 
+" Create split windows
+nnoremap <leader>\ :vsplit<CR>         " Vertical
+nnoremap <leader>- :split<CR>           " Horizontal
+nnoremap <leader>c :close<CR>           " Close
+
 " Buffer navigation settings
 nnoremap <leader>bp :bprevious<CR>  " Switch to previous buffer
 nnoremap <leader>bn :bnext<CR>      " Switch to next buffer
@@ -21,7 +26,8 @@ nnoremap ;q :q<CR>             " Quit
 nnoremap ;q1 :q!<CR>           " Force quit
 
 " Copy till the end of the line
-nnoremap Y y$                  " To make it behave like D or C
+" To make it behave like D or C
+nnoremap Y y$
 
 " Move you to the last buffer you were in
 nnoremap gb :b#<CR>                 
