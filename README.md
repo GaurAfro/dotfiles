@@ -2,6 +2,12 @@
 
 This repository contains my personal dotfiles. These are the configuration files for tools I use like Neovim, tmux, and others.
 
+## Getting Started with help from [ChatGPT](https://chat.openai.com/)
+
+### [My Initial Prompt For A Chat](https://github.com/GaurAfro/dotfiles/blob/master/UseChatGPT.md)
+
+Before setting up my dotfiles, I wanted to use ChatGPT to help me streamline my development. I started by writing a prompt for ChatGPT to help me with my dotfiles and kept expanding from there. I used the following prompt:
+[My Initial Prompt For A Chat](https://github.com/GaurAfro/dotfiles/blob/master/UseChatGPT.md)
 
 ## Installation
 
@@ -51,7 +57,10 @@ setup Git and GitHub:
     xclip -sel clip < ~/.ssh/id_ed25519.pub
     ```
 
-    If `xclip` is not installed, it can be installed with `sudo apt-get install xclip`.
+    If `xclip` is not installed, it can be installed with 
+    ```bash
+    sudo apt-get install xclip
+    ```.
 
 6. **Add SSH Key to GitHub**
 
