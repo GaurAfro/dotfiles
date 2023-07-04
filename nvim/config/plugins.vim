@@ -2,6 +2,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " Plugin list
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'github/copilot.vim'
 Plug 'tpope/vim-surround'      " Surround text with something
 Plug 'tpope/vim-repeat'        " Allow repeating of custom commands like surround

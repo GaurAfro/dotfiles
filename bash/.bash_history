@@ -353,3 +353,9 @@ tns The New One
 tns thenewone
 tn
 tmux new-session
+ls
+ll
+v.
+exit
+ts
+exit

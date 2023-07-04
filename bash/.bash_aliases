@@ -1,5 +1,11 @@
 # This file contains all the aliases I use in my bash shell.
 
+# bash aliases
+alias b='bash'
+alias sb='source ~/.bashrc'
+alias sbp='source ~/.bash_profile'
+alias sbrc='source ~/.bashrc'
+
 # ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -22,11 +28,14 @@ alias gcm='git commit -m'
 alias gca='git commit --amend'
 alias gcam='git commit --amend -m'
 alias gpom='git push origin master'
-
     
 # neovim aliases
 alias v='nvim'
 alias v.='nvim .'
+alias n='nvim'
+alias n.='nvim .'
+alias nv='nvim'
+alias nv.='nvim .'
 alias vi='nvim'
 alias vi.='nvim .'
 alias vim='nvim'
