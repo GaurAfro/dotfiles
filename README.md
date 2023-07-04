@@ -23,8 +23,7 @@ setup Git and GitHub:
 
 2. **Configure Git**
 
-    After installing Git, we configured your user name and email address. This information is used to identify the commits you make in Git. 
-
+    After installing Git, we configured your user name and email address. This information is used to identify the commits you make in Git.
     ```bash
     git config --global user.name "Your Name"
     git config --global user.email "youremail@domain.com"
@@ -60,7 +59,7 @@ setup Git and GitHub:
     If `xclip` is not installed, it can be installed with 
     ```bash
     sudo apt-get install xclip
-    ```.
+    ```
 
 6. **Add SSH Key to GitHub**
 
