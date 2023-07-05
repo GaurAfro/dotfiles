@@ -392,3 +392,268 @@ echo "line 5" >> myfile.txt
 ./readfile.sh myfile.txt 
 n myfile.txt 
 exit
+sudo apt upate -y && sudo apt upgrade -y
+sudo apt udpate -y && sudo apt upgrade -y
+sudo apt update -y && sudo apt upgrade -y
+exit
+sudo apt dist-upgrade
+cat /etc/os-release 
+exit
+cat /lib-release
+exit
+node -v
+npm -v
+node -v
+nvim
+npn instal -g neovim
+npm instal -g neovim
+nvim
+v.
+source .bashrc 
+vi
+vi.
+v.
+ls
+la
+ll
+v .config/tmux/tmux.conf 
+source .bashrc 
+cd dotfiles/
+gaa
+gcm "updated nvim, tmuc and bash"
+gpom
+gs
+la
+cd..
+v. ~/.bash_aliases 
+..
+v ~/.bash_aliases 
+v
+v dotfiles/nvim/config/plugins.vim 
+v ~/.bash_aliases 
+sb
+v ~/.bash_aliases 
+source .bashrc 
+v
+ll
+cd Coding/
+ls
+mv -r active-scripts/ AHK-active-scripts/
+mv active-scripts/ AHK-active-scripts/
+ll AHK-active-scripts/
+gi
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/<GaurAfro>/<Coding>.git
+git remote add origin https://github.com/GaurAfro/Coding.git
+git push -u origin master
+git ls-files
+git remote -v
+git push origin master
+git remote set-url origin git@github.com:GaurAfro/Coding.git
+git remote -v
+git push origin master
+gb
+git branch 
+git branch ga
+ga
+git commit
+git push origin master
+git pull origin master 
+git pull origin HEAD 
+git push origin master
+git branch
+git checkout main
+git checkout master
+git branch -m master main
+git push -u origin main
+git pull main
+git pull origin main
+git push origin main
+git add .
+git commit 
+git push origin main
+git push --help
+git merge main
+git checkout master
+git branch
+git checkout master
+git merge main
+v .
+git add blackjack\ by\ GPT.py 
+git commit
+git commit -m "test"
+git branch -d master
+git checkout main
+git branch -d master
+git merge master
+cp -r ~/Coding ~/Coding_backup
+rm -rf ~/Coding/.git
+gi
+git init
+rm -rf ~/Coding/.git
+git init main
+rm -rf ~/Coding/.git
+git config --global init.defaultBranch main
+git init
+git remote add origin git@github.com:GaurAfro/Coding.git
+git add .
+git commit -m "Initial commit"
+git add .
+git submodule status
+git add *
+mv main main_backup
+git add .
+ls -la main
+git branch 
+rm -rf ~/Coding/.git
+..
+mv Coding 'Coding Projects'
+ls
+mv 'Coding Projects' coding-projects
+ls
+sudo apt update
+sudo apt install gh
+sudo apt install openssh-server
+sudo nvim /etc/ssh/sshd_config
+sudo service ssh start
+echo "sudo service ssh start" >> ~/.bashrc
+v.
+ip addr show eth0
+ssh username@ip_address
+ssh gaura@ip_address
+sudo service ssh status
+v.
+rm -r coding-projects/
+git clone git@github.com:GaurAfro/coding-projects.git
+mv Coding_backup/AHK-active-scripts/ ~/coding-projects/ahk-scripts
+cd coding-projects/
+git init
+git add .
+git commit -m "Minor change to kickstart sync"
+git push origin master
+..
+mkdir prompts
+touch prompts/streamline-dev
+mv prompts/streamline-dev prompts/streamline-dev.txt
+sudo apt-get update
+sudo apt-get install tree
+tree -a ~
+tree -a -L 1 ~
+tree -a -L 1 ~ | grep "\."
+cd dotfiles/
+tree -a 
+tree -a -L 1
+tree -a -L 1 bash/ nvim/ tmux/
+tree -a -L 2 bash/ nvim/ tmux/
+..
+v
+grep -irl "hello" .
+ls | sort
+la | sort | grep "." .
+la 
+la | sort
+ls -a | sort > config.txt | grep < config.txt "."> config.txt
+touch config.txt && ls -a | sort > config.txt | grep < config.txt "."> config.txt
+ls config.txt 
+la config.txt 
+v config.txt 
+touch raw.txt config.txt && ls -a | sort > raw.txt | grep < raw.txt "."> config.txt
+cat config.txt 
+la config.txt 
+cat < config.txt 
+v config.txt 
+touch raw.txt config.txt && ls -a | sort > raw.txt | grep < raw.txt "."> config.txt
+v config.txt 
+touch raw.txt config.txt && ls -a | sort > raw.txt | grep < raw.txt "." > config.txt
+v config.txt 
+touch raw.txt config.txt && ls -a | sort > raw.txt | grep raw.txt "." > config.txt
+touch raw.txt config.txt && ls -a | sort > raw.txt | grep "." raw.txt > config.txt
+v config.txt 
+touch raw.txt config.txt && ls -a | sort raw.txt | grep "." raw.txt > config.txt
+v config.txt 
+rm raw.txt config.txt
+touch raw.txt config.txt && ls -a | sort raw.txt | grep "." raw.txt > config.txt
+v config.txt 
+v raw.txt 
+touch raw.txt config.txt && ls -a | sort > raw.txt &&  grep "." raw.txt > config.txt
+v config.txt 
+grep "."  raw.txt 
+rm raw.txt config.txt
+touch raw.txt config.txt && ls -a | sort > raw.txt &&  grep "\." raw.txt > config.txt
+v config.txt 
+grep "\." raw.txt
+grep "^\." raw.txt
+touch raw.txt config.txt && ls -a | sort > raw.txt &&  grep "^\." raw.txt | grep -v "[a-zA-Z0-9]" > config.txt
+v config.txt 
+touch config.txt && ls -a | sort |  grep "^\." | grep "[a-zA-Z0-9]" > config.txt
+v config.txt 
+rm raw.txt config.txt
+touch config.txt && ls -a | sort |  grep "^\." | grep "[a-zA-Z0-9]" > config.txt
+v config.txt 
+rm raw.txt config.txt
+rm config.txt
+ls -a | sort | grep "^\." | grep "[a-zA-Z0-9]" > config.txt
+echo config.txt 
+echo < config.txt 
+cat
+cat config.txt 
+ls -a | sort | grep "^\." | grep "[a-zA-Z0-9]" > config.txt && cat config.txt
+rm config.txt
+ls -a | sort | grep "^\." | grep "[a-zA-Z0-9]" > config.txt && cat config.txt
+cd dotfiles/
+git add .
+gcm "Added my ChatGPT promt to streamline my Dev environment setup"
+gpom
+mv streamline-dev.md USEME.md
+git add .
+gcm "Changed name from streamline-dev.md to USEME.md"
+gpom
+mv  USEME.md UseChatGPT.md
+gcm "Changed name from USEME.md to UseChatGPT.md"
+git add .
+gcm "Changed name from USEME.md to UseChatGPT.md"
+gpom
+gaa
+gcm "Updated README.md"
+gpom
+gaa
+gcm "Updated README.md"
+gpom
+touch myscript.sh
+nv myscript.sh 
+chmod +x myscript.sh 
+./myscript.sh 
+nv myscript.sh 
+./myscript.sh 
+htop
+./myscript.sh 
+nv myscript.sh 
+nv greeting.sh
+rm myscript.sh 
+~
+cd coding-projects/
+mkdir bash-scripting
+cd bash-scripting/
+nv greet.sh
+./readfile.sh 
+n readfile.sh greet.sh countdown.sh 
+n greet.sh 
+~
+n dotfiles/UseChatGPT.md 
+code
+nvim ~/update_dotfiles.sh
+chmod +x ~/update_dotfiles.sh
+~/update_dotfiles.sh
+nvim ~/update_dotfiles.sh
+~/update_dotfiles.sh
+nvim ~/update_dotfiles.sh
+n ~/coding-projects/bash-scripting/update-and-upgrade.sh
+chmod +x ~/coding-projects/bash-scripting/update-and-upgrade.sh 
+./coding-projects/bash-scripting/update-and-upgrade.sh
+n ~/coding-projects/bash-scripting/update-and-upgrade.sh
+ls /usr/local/bin/
+lah /usr/local/bin/
+lah /opt/neovim/usr/bin/nvim
+lah /opt/neovim/usr/bin/
