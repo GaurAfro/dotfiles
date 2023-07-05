@@ -61,11 +61,10 @@ Take a look at my dotfiles, to see what I have already done.
 
 ## Defining skill level
 
-In using and writing Python 3, Lua and Bash script, a total beginner.
-Bash, Tmux, Git, GitHub, Vscode and Neovim.
-Beginner level in most of them.
-Neovim is the exception, there I'm at intermediate level.
-Define the different levels:
+In using and writing Python 3, Lua and vimscript, I'm beginner with those.
+Tmux, Git, GitHub and Vscode, there I'm basic level.
+Neovim, command-line usage and Bash scripting, there I'm at intermediate level.
+Define the different levels using Neovim as the example:
 
 1. **Beginner**
    - Familiar with how to open and close files.

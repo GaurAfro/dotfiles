@@ -359,3 +359,36 @@ v.
 exit
 ts
 exit
+wich htop
+which htop
+sudo apt remove htop
+which htop
+$?
+man $
+man bash
+cd ~/coding-projects/bash-scripting/
+chmod +x greet.sh 
+./greet.sh 
+exit
+chmod +x countdown.sh 
+touch myfile.txt
+v myfile.txt 
+exit
+ls
+chmod +x readfile.sh 
+./countdown.sh 
+./countdown.sh 5
+exit
+./countdown.sh 5
+exit
+./countdown.sh 5
+exit
+./countdown.sh 5
+./countdown.sh 500
+./countdown.sh 25
+./countdown.sh
+./readfile.sh myfile.txt 
+echo "line 5" >> myfile.txt 
+./readfile.sh myfile.txt 
+n myfile.txt 
+exit
