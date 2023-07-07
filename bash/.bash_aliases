@@ -60,4 +60,10 @@ alias pip='pip3'
 alias pip2='pip2'
 alias pip3='pip3'
 
+# emacs and doom aliases
+alias emacs='emacsclient -c -n'
+alias emacst='emacsclient -nw'
+alias doomt='emacsclient28 -c -n'
+alias doomt='emacsclient28 -nw'
+
 

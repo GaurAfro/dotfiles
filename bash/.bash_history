@@ -657,3 +657,316 @@ ls /usr/local/bin/
 lah /usr/local/bin/
 lah /opt/neovim/usr/bin/nvim
 lah /opt/neovim/usr/bin/
+lah
+mkdir notes
+n notes/note
+n notes/note.txt
+cd dotfiles/
+git add .
+git comit
+git commit
+git commit -m "just added v2 DevGPT"
+gpom
+cd ~/coding-projects/
+git add .
+git commit -m "added Bash Scripting"
+gpom
+~
+gh auth login
+gh repo view cli/cli
+gh repo GaurAfro/dotfiles
+gh repo view GaurAfro/dotfiles
+cd ~/notes/
+gh repo create notes
+gh repo create notes --private 
+echo "# notes" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:GaurAfro/notes.git
+git push -u origin main
+ga
+gaa
+gc
+gcm
+gcm "new note"
+git branch
+git push origin main
+ls
+~
+n dotfiles/tmux/tmux.conf 
+exit
+n.
+mkdir -p ~/.tmux/resurrect
+rm ~/.tmux/resurrect
+rm -r ~/.tmux/resurrect
+find resurrect
+n
+exit
+nv notes/note.txt 
+emacs
+~
+lah
+cd .config/
+lah
+cd doom/
+ls
+..
+cd emacs/
+ls
+emacs
+find resurrect
+n dotfiles/tmux/tmux.conf 
+sudo apt install ripgrep
+n
+emacs --daemon
+emacs28 --daemon
+emacs
+doom install
+emacs
+cd ~/.config/emacs/
+lah
+n early-init.el 
+find ~ -name server
+grep -r 'server' mydir
+grep -r 'server' server
+grep -r 'server'
+grep -r 'EMACS_SERVER_FILE''
+cd
+..
+grep -r 'EMACS_SERVER_FILE'
+ls
+cd emacs/
+ls
+./autogen.sh
+./configure --with-pgtk
+sudo apt install autoconf
+./autogen.sh
+./configure --with-pgtk
+make -j8
+sudo make install
+emacs
+emacs --version
+doom start
+..
+cd .config/doom/
+..
+cd ls/
+ls
+cd doom/
+ls
+..
+n .bashrc 
+sourh .bashrc
+source .bashrc
+emacs --daemon
+emacs
+et
+emacsclient -c -n
+et .bash_aliases 
+source .bashrc
+emacs
+source .bashrc
+et .bash_aliases 
+chrome
+n .bashrc 
+cd /usr/local/bin
+v chrome
+sudo apt update && sudo apt upgrade -y
+sudo vim /etc/ssh/ssh_config
+ls
+sudo touch chrome
+sudo chmod +x chrome
+sudo nvim chrome
+~
+chrome
+echo 'alias xdg-open=chrome' >> ~/.bashrc
+source ~/.bashrc
+chrome
+sudo apt update && sudo apt install x11-apps
+chrome
+echo 'export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0' >> ~/.bashrc
+n .bashrc
+chrome
+sudo v /usr/local/bin/chrome 
+sudo vim /usr/local/bin/chrome 
+echo -e '#!/bin/bash\n/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe "$@"' > ~/chrome
+chrome
+chmod +x ~/chrome
+chrome
+nv chrome 
+sudo rm /usr/local/bin/chrome 
+sudo mv ~/chrome /usr/local/bin/chrome
+chrome
+/mnt/
+cd /mnt/c/
+ls
+cd Program\ Files\ (x86)/
+cd Program\ Files\ \(x86\)/Google/Chrome/Application/
+ls
+vim /usr/local/bin/chrome 
+~
+chrome
+sudo apt install emacs
+emacs -v
+emacs
+git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
+~/.emacs.d/bin/doom install
+rm nv
+nv
+rm -r .emacs.d/
+git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
+~/.emacs.d/bin/doom install
+doom
+emacs
+emacs --daemon
+emacs
+emacsclient -c -n
+emacs
+source .bashrc
+crome
+chrome
+emacs
+emacs .bashrc
+emacs
+~/.emacs.d/bin/doom sync
+sudo apt install fd-find
+sudo apt install find
+bin/doom doctor
+.emacs.d/bin/doom doctor
+sudo add-apt-repository ppa:kelleyk/emacs
+sudo apt update
+sudo apt install emacs28
+sudo apt remove  emacs
+sudo apt install emacs28
+sudo apt remove emacs-common
+sudo apt install emacs28
+git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
+~/.emacs.d/bin/doom install
+killall emacs
+sudo apt remove emacs-common
+~/.emacs.d/bin/doom install
+emacs
+emacs --daemon
+emacsclient
+n .bashrc 
+emacsclient -c -n'
+emacsclient -c -n
+# Start the Emacs server
+doom start
+# Connect to the server with a new frame
+emacsclient -c -n
+# Stop the server when you're done
+doom stop
+# Start the Emacs server
+doom start
+# Connect to the server with a new frame
+emacsclient -c -n
+# Stop the server when you're done
+doom stop
+n .bashrc 
+n .bash_aliases 
+n .bashrc 
+source .bashrc
+et
+n .doom.d/init.el 
+~/.emacs.d/bin/doom sync
+~/.emacs.d/bin/doom docter
+~/.emacs.d/bin/doom doctor
+emacs
+~/.emacs.d/bin/doom start
+~/.emacs.d/bin/doom install
+~/.emacs.d/bin/doom upgrade
+~/.emacs.d/bin/doom start
+~/.emacs.d/bin/doom h
+~/.emacs.d/bin/doom env
+emacs
+n .emacs.d/.local/env 
+rm -rf ~/.emacs.d ~/.doom.d
+emacs
+git clone --depth 1 --single-branch https://github.com/doomemacs/doomemacs ~/.config/emacs
+~/.config/emacs/bin/doom install
+emacs
+sudo apt remove emacs28-common 
+git clone git://git.sv.gnu.org/emacs.git
+sudo apt install emacs28
+emacs
+$ sudo apt install build-essential libgtk-3-dev libgnutls28-dev libtiff5-dev libgif-dev libjpeg-dev libpng-dev libxpm-dev libncurses-dev texinfo
+$ sudo apt install build-essential libgtk-3-dev libgnutls28-dev libtiff5-dev libgif-dev libjpeg-dev libpng-dev libxpm-dev libncurses-dev
+sudo apt install build-essential libgtk-3-dev libgnutls28-dev libtiff5-dev libgif-dev libjpeg-dev libpng-dev libxpm-dev libncurses-dev texinfo
+emacs
+cd /mnt/wslg/runtime-dir/emacs/server
+cd /mnt/wslg/runtime-dir/emacs/
+ls
+n.
+emacs
+emacs --version
+emacsclient --version
+doom install
+n ~/.bash_aliases 
+source .bashrc
+source ~/.bashrc
+doom install
+$EMACS_SERVER_FILE
+echo $EMACS_SERVER_FILE
+emacs
+emacsclient -c -n
+emacsclient --version
+emacs --version
+ls
+make uninstall
+make uninstall emacs
+cd emacs/
+n.
+nvim .
+emacsclient -c -n
+xeyes
+emacsclient28 -c -n
+xeyes
+n .bash_history 
+emacs28 -nw
+emacsclient28 -c -n
+xeyes
+emacsclient28 -c -n
+exit
+n .config/emacs/.local/etc/@/init.28.elc
+n .config/emacs/.local/etc/@/init.28.el
+~/.config/emacs/bin/doom sync
+n /usr/share/emacs/28.1/lisp/emacs-lisp/warnings.elc 
+~/.config/emacs/bin/doom doctot
+~/.con
+export PATH=”$HOME/.emacs.d/bin:$PATH”
+doom sync
+export PATH=”$HOME/.config/emacs/bin:$PATH”
+doom sync
+n ~/.config/doom/init.el 
+rm -rf~/.config/emacs/.local/
+rm -rf ~/.config/emacs/.local/
+~/.config/emacs/bin/doom sync
+emacs28
+sudo apt remove emacs30
+cd emacs/
+sudo make uninstall
+emacs --version
+emacs
+emacs28 
+emacs
+emacsclient28 -c -n
+emacsclient28
+emacs28
+ext
+exit
+emacs28 --deamon
+emacs28
+sudo rm /usr/local/bin/emacs-30.0.50 
+sudo rm /usr/local/bin/ebrowse
+sudo rm /usr/local/bin/etags
+sudo rm /usr/local/bin/emacsclient
+sudo rm -r /usr/local/libexec/emacs/30.0.50/
+sudo rm -r /usr/local/share/emacs/30.0.50/
+sudo rm /usr/local/share/man/man1/emacs.1
+sudo rm /usr/local/share/man/man1/emacsclient.1
+exit
+mkdir agenda
+touch refile.org
