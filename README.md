@@ -26,6 +26,8 @@ setup Git and GitHub:
     After installing Git, we configured your user name and email address. This information is used to identify the commits you make in Git.
     ```bash
     git config --global user.name "Your Name"
+    ```
+    ```bash
     git config --global user.email "youremail@domain.com"
     ```
 
