@@ -38,18 +38,37 @@ This function should only modify configuration layer settings."
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
      ;; `M-m f e R' (Emacs style) to install them.
      ;; ----------------------------------------------------------------
+     lsp
+     (git :variables
+          git-enable-magit-gitflow-plugin t
+          git-enable-magit-delta-plugin t)
      auto-completion
-     ;; better-defaults
      emacs-lisp
-     ;; git
+     (colors :variables colors-colorize-identifiers 'all)
      helm
-     ;; lsp
      markdown
      multiple-cursors
-     org
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
+     python
+     prettier
+     (org :variables
+          org-projectile-file "~/org-files/TODOs.org"
+          org-enable-notifications t
+          org-start-notification-daemon-on-startup t
+          org-todo-dependencies-strategy 'naive-auto)
+     (shell :variables
+            shell-default-shell 'vterm
+            shell-default-term-shell "/bin/bash"
+            multi-term-program "/bin/bash"
+            shell-enable-smart-eshell t
+            shell-protect-eshell-prompt nil
+            close-window-with-terminal t
+            spacemacs-vterm-history-file-location "~/.bash_history"
+            shell-default-height 40
+            shell-default-position 'right)
+     (shell-scripts :variables
+                    shell-scripts-backend 'lsp
+                    shell-scripts-format-on-save t)
+
      ;; spell-checking
      ;; syntax-checking
      ;; version-control
@@ -198,6 +217,8 @@ It should only modify the values of Spacemacs settings."
    ;; number is the project limit and the second the limit on the recent files
    ;; within a project.
    dotspacemacs-startup-lists '((recents . 5)
+                                (bookmark . 5)
+                                (todos . 5)
                                 (projects . 7))
 
    ;; True if the home buffer should respond to resize events. (default t)
@@ -425,7 +446,7 @@ It should only modify the values of Spacemacs settings."
                                                             doc-view-mode
                                                             markdown-mode
                                                             pdf-view-mode
-                                        :size-limit-kb 1000)
+                                        :size-limit-kb 10000)
 
    ;; Code folding method. Possible values are `evil', `origami' and `vimish'.
    ;; (default 'evil)
@@ -516,7 +537,7 @@ It should only modify the values of Spacemacs settings."
    dotspacemacs-use-clean-aindent-mode t
 
    ;; Accept SPC as y for prompts if non-nil. (default nil)
-   dotspacemacs-use-SPC-as-y nil
+   dotspacemacs-use-SPC-as-y t
 
    ;; If non-nil shift your number row to match the entered keyboard layout
    ;; (only in insert state). Currently supported keyboard layouts are:
@@ -556,6 +577,10 @@ This function is called immediately after `dotspacemacs/init', before layer
 configuration.
 It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
+  (setq-default git-magit-status-fullscreen t)
+  (setq magit-repository-directories
+        '(("~/coding-projects/" . 5) ("~/org-files/" . 9) ("~/dotfiles/" . 9)))
+
 )
 
 
