@@ -249,7 +249,7 @@ It should only modify the values of Spacemacs settings."
 
    ;; If non-nil, *scratch* buffer will be persistent. Things you write down in
    ;; *scratch* buffer will be saved and restored automatically.
-   dotspacemacs-scratch-buffer-persistent nil
+   dotspacemacs-scratch-buffer-persistent t
 
    ;; If non-nil, `kill-buffer' on *scratch* buffer
    ;; will bury it instead of killing.
@@ -602,6 +602,26 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+  (setq org-capture-templates
+        '(("t" "Todo" entry (file+headline "~/org-files/TODOs.org" "Tasks")
+           "* TODO %?\n %i\n %a")))
+  (setq org-agenda-files '("~/org-files/TODOs.org"))
+
+  (defun dashboard-insert-todos (list-size)
+    (let ((todos (org-todo-list)))
+      (when todos
+        (dashboard-insert-section
+         "TODOs:"
+         todos
+         list-size
+         "o"
+         `(find-file "~/org-files/TODOs.org")
+         "No TODOs found."))))
+  (defun my-org-archive-done-tasks ()
+    (interactive)
+    (org-map-entries 'org-archive-subtree "/DONE" 'file))
+
+  (add-hook 'org-after-todo-state-change-hook 'my-org-archive-done-tasks)
 )
 
 
