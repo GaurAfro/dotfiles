@@ -43,10 +43,16 @@ This function should only modify configuration layer settings."
           git-enable-magit-gitflow-plugin t
           git-enable-magit-delta-plugin t)
      auto-completion
+     csv
      emacs-lisp
-     (colors :variables colors-colorize-identifiers 'all)
+     ;; (colors :variables colors-colorize-identifiers 'all)
+     (json :variables
+           json-fmt-tool 'web-beautify
+           json-fmt-on-save t
+           json-backend 'lsp)
+     web-beautify
      helm
-     markdown
+     (markdown :variables markdown-live-preview-engine 'vmd)
      multiple-cursors
      python
      prettier
@@ -64,13 +70,11 @@ This function should only modify configuration layer settings."
             close-window-with-terminal t
             spacemacs-vterm-history-file-location "~/.bash_history"
             shell-default-height 40
-            shell-default-position 'right)
+            shell-default-position 'bottom)
      (shell-scripts :variables
                     shell-scripts-backend 'lsp
                     shell-scripts-format-on-save t)
 
-     ;; spell-checking
-     ;; syntax-checking
      ;; version-control
      treemacs)
 
@@ -241,7 +245,7 @@ It should only modify the values of Spacemacs settings."
    dotspacemacs-new-empty-buffer-major-mode 'text-mode
 
    ;; Default major mode of the scratch buffer (default `text-mode')
-   dotspacemacs-scratch-mode 'text-mode
+   dotspacemacs-scratch-mode 'org-mode
 
    ;; If non-nil, *scratch* buffer will be persistent. Things you write down in
    ;; *scratch* buffer will be saved and restored automatically.
