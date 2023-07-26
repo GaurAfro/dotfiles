@@ -13,20 +13,22 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use({ 
-	  "catppuccin/nvim", 
+  use({
+	  "catppuccin/nvim",
 	  as = "catppuccin",
 	  config = function()
 		  vim.cmd("colorscheme catppuccin")
 	  end
 
-  }) 
+  })
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('nvim-treesitter/playground')
   use('ThePrimeagen/harpoon')
   use("mbbill/undotree")
   use("tpope/vim-fugitive")
+  use("tpope/vim-commentary")
+  use("tpope/vim-surround")
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -48,5 +50,17 @@ return require('packer').startup(function(use)
 	  {'L3MON4D3/LuaSnip'},     -- Required
   }
 }
-
+-- Lua
+use {
+    "folke/which-key.nvim",
+    config = function()
+        vim.o.timeout = true
+        vim.o.timeoutlen = 300
+        require("which-key").setup {
+            -- your configuration comes here
+            -- or leave it empty to use the default settings
+            -- refer to the configuration section below
+        }
+    end
+}
 end)
