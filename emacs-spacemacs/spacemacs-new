@@ -602,11 +602,16 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+  
+  ;; Org capture templates
   (setq org-capture-templates
         '(("t" "Todo" entry (file+headline "~/org-files/TODOs.org" "Tasks")
            "* TODO %?\n %i\n %a")))
+  
+  ;; Org agenda files
   (setq org-agenda-files '("~/org-files/TODOs.org"))
-
+  
+  ;; Function to insert TODOs in dashboard
   (defun dashboard-insert-todos (list-size)
     (let ((todos (org-todo-list)))
       (when todos
@@ -617,11 +622,45 @@ before packages are loaded."
          "o"
          `(find-file "~/org-files/TODOs.org")
          "No TODOs found."))))
+  
+  ;; Function to archive DONE tasks
   (defun my-org-archive-done-tasks ()
     (interactive)
     (org-map-entries 'org-archive-subtree "/DONE" 'file))
 
   (add-hook 'org-after-todo-state-change-hook 'my-org-archive-done-tasks)
+
+  ;; Sync TODOs function to update TODOs.org
+  (defun my-sync-todos-to-master-list ()
+    (let ((heading (org-get-heading t t t t))
+          (file-name (buffer-file-name (buffer-base-buffer)))
+          (state (org-get-todo-state)))
+      (with-current-buffer (find-file-noselect "~/org-files/TODOs.org")
+        ;; Remove existing TODOs/DONEs with the same heading and link
+        (org-map-entries
+         (lambda ()
+           (when (and (string= (org-get-heading t t t t) heading)
+                      (string= (org-entry-get nil "LINK") (format "[[file:%s]]" file-name)))
+             (delete-region (point-at-bol) (1+ (point-at-eol)))))
+         nil 'file)
+        ;; Based on the state, add the new entry to the appropriate section
+        (if (string= state "TODO")
+            (progn
+              (goto-char (point-min))
+              (re-search-forward "^* Tasks" nil t)
+              (goto-char (point-at-eol))
+              (insert (format "\n** TODO %s [[file:%s][source]]" heading file-name)))
+          (goto-char (point-min))
+          (re-search-forward "^* Completed Tasks" nil t)
+          (goto-char (point-at-eol))
+          (insert (format "\n** DONE %s [[file:%s][source]]" heading file-name)))
+        (save-buffer))))
+
+  ;; Remove the old function from the hook
+  (remove-hook 'org-after-todo-state-change-hook 'my-log-todo-to-master-list)
+
+  ;; Add the new function to the hook
+  (add-hook 'org-after-todo-state-change-hook 'my-sync-todos-to-master-list)
 )
 
 
