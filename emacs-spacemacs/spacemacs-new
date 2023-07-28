@@ -60,7 +60,9 @@ This function should only modify configuration layer settings."
           org-projectile-file "~/org-files/TODOs.org"
           org-enable-notifications t
           org-start-notification-daemon-on-startup t
-          org-todo-dependencies-strategy 'naive-auto)
+          org-todo-dependencies-strategy 'naive-auto
+          org-enable-github-support t
+          org-enable-modern-support t)
      (shell :variables
             shell-default-shell 'vterm
             shell-default-term-shell "/bin/bash"

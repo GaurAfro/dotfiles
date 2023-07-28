@@ -7,18 +7,15 @@ alias sbp='source ~/.bash_profile'
 alias sbrc='source ~/.bashrc'
 
 # # ls aliases
-# alias ll='ls -alF'
-# alias la='ls -A'
-# alias lah='ls -Ahl'
-# alias l='ls -CF'
-# Changing "ls" to "exa"
-alias ls='exa -al --color=always --group-directories-first' # my preferred listing
-alias la='exa -a --color=always --group-directories-first'  # all files and dirs
+alias ls='exa -al --color=always --group-directories-first'   # my preferred listing
+alias la='exa -a --color=always --group-directories-first'    # all files and dirs
 alias lah='exa -ahl --color=always --group-directories-first' # all files and dirs, long format
-alias ll='exa -l --color=always --group-directories-first'  # long format
-alias lt='exa -aT --color=always --group-directories-first' # tree listing
+alias ll='exa -l --color=always --group-directories-first'    # long format
+alias lt='exa -aT --color=always --group-directories-first'   # tree listing
 alias l.='exa -a | egrep "^\."'
 
+# ssh aliases
+alias acer='ssh acer'
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
@@ -26,9 +23,9 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 # cd aliases
-alias ..='cd ..'            
-alias ...='cd ../..'            
-alias ....='cd ../../..'    
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 alias ~='cd ~'
 
 # git aliases
@@ -51,10 +48,9 @@ alias commit='git commit -m'
 alias fetch='git fetch'
 alias pull='git pull origin'
 alias push='git push origin'
-alias stat='git status'  # 'status' is protected name so using 'stat' instead
+alias stat='git status' # 'status' is protected name so using 'stat' instead
 alias tag='git tag'
 alias newtag='git tag -a'
-
 
 # neovim aliases
 alias v='nvim'
@@ -92,5 +88,3 @@ alias emacs='emacsclient -c -n'
 alias emacst='emacsclient -nw'
 alias doomt='emacsclient28 -c -n'
 alias doomt='emacsclient28 -nw'
-
-
