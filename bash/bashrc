@@ -169,7 +169,7 @@ export XDG_CONFIG_HOME=/home/gaurafro/.config
 export XDG_DATA_HOME=/home/gaurafro/.local/share
 
 # Set Neovim or Vim as the default editor if available
-if [ command -v /snap/bin/nvim ] >/dev/null; then
+if command -v /snap/bin/nvim >/dev/null; then
 	export EDITOR=/snap/bin/nvim
 elif command -v nvim >/dev/null; then
 	export EDITOR=nvim
