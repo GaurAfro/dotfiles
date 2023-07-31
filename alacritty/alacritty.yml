@@ -40,7 +40,13 @@ window:
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
   opacity: 0.90
-  # opacity: 0.80
+
+  mouse_bindings:
+  # Right click to copy when there's a selection
+    - { button: Right, action: CopySelection }
+  
+  # Right click to paste when there's no selection
+    - { button: Middle, action: PasteSelection }
 
   # Window decorations
   #

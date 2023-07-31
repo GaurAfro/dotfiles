@@ -88,3 +88,77 @@ alias emacs='emacsclient -c -n'
 alias emacst='emacsclient -nw'
 alias doomt='emacsclient28 -c -n'
 alias doomt='emacsclient28 -nw'
+
+# NeoVim aliases
+# open ~/gaurafro-dotfiles
+alias nd='nvim ~/gaurafro-dotfiles/'
+alias vd='nvim ~/gaurafro-dotfiles/'
+alias ngd='nvim ~/gaurafro-dotfiles/'
+alias vgd='nvim ~/gaurafro-dotfiles/'
+# open bash aliases file
+alias nba='nvim ~/.bash_aliases'
+alias vba='nvim ~/.bash_aliases'
+# open bashrc file
+alias nbr='nvim ~/.bashrc'
+alias vbr='nvim ~/.bashrc'
+# open bash_profile file
+alias nbp='nvim ~/.bash_profile'
+alias vbp='nvim ~/.bash_profile'
+# open nvim config folder
+alias nc='nvim ~/.config/nvim/'
+alias vc='nvim ~/.config/nvim/'
+alias nnc='nvim ~/.config/nvim/'
+alias vnc='nvim ~/.config/nvim/'
+# open i3 config file
+alias ni3='nvim ~/.config/i3/config'
+alias vi3='nvim ~/.config/i3/config'
+# open i3status config file
+alias ni3s='nvim ~/.config/i3status/config'
+alias vi3s='nvim ~/.config/i3status/config'
+# open polybar config file
+alias npb='nvim ~/.config/polybar/config'
+alias vpb='nvim ~/.config/polybar/config'
+
+# Browser aliases (for optimus laptop)
+alias firefox="primusrun /snap/bin/firefox"
+alias chrome="primusrun flatpak run com.google.Chrome"
+alias brave="primusrun flatpak run com.brave.Browser"
+
+
+# open ranger config file
+# alias nr='nvim ~/.config/ranger/rc.conf'
+# alias vr='nvim ~/.config/ranger/rc.conf'
+# open zsh config file
+# alias nz='nvim ~/.zshrc'
+# alias vz='nvim ~/.zshrc'
+# open tmux config file
+# alias nt='nvim ~/.tmux.conf'
+# alias vt='nvim ~/.tmux.conf'
+# open git config file
+# alias ng='nvim ~/.gitconfig'
+# alias vg='nvim ~/.gitconfig'
+# open ssh config file
+# alias ns='nvim ~/.ssh/config'
+# alias vs='nvim ~/.ssh/config'
+# open xinitrc config file
+# alias nx='nvim ~/.xinitrc'
+# alias vx='nvim ~/.xinitrc'
+# open xresources config file
+# alias nX='nvim ~/.Xresources'
+# alias vX='nvim ~/.Xresources'
+# open xmodmap config file
+# alias nm='nvim ~/.Xmodmap'
+# alias vm='nvim ~/.Xmodmap'
+# open xbindkeys config file
+# alias nb='nvim ~/.xbindkeysrc'
+# alias vb='nvim ~/.xbindkeysrc'
+# open xprofile config file
+# alias nXp='nvim ~/.xprofile'
+# alias vXp='nvim ~/.xprofile'
+# open xsession config file
+# alias nXs='nvim ~/.xsession'
+# alias vXs='nvim ~/.xsession'
+# open dmenu config file
+# alias nd='nvim ~/.dmenurc'
+# alias vd='nvim ~/.dmenurc'
+
