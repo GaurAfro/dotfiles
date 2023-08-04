@@ -68,8 +68,10 @@ if [ -n "$force_color_prompt" ]; then
 	fi
 fi
 
+# PS1 Customization
 if [ "$color_prompt" = yes ]; then
-	PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+	PS1='${debian_chroot:+($debian_chroot)}\[\e[32m\]\h\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[34m\]\u\[\e[m\] \W \$ '
+	# PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
 	PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -170,7 +172,7 @@ export NVM_DIR="$HOME/.config/nvm"
 export XDG_CONFIG_HOME=/home/gaurafro/.config
 export XDG_DATA_HOME=/home/gaurafro/.local/share
 
-export BROWSER="primusrun /snap/bin/firefox"
+# export BROWSER="primusrun /snap/bin/firefox"
 
 # Set Neovim or Vim as the default editor if available
 if command -v /snap/bin/nvim >/dev/null; then
@@ -182,3 +184,5 @@ elif command -v vim >/dev/null; then
 else
 	export EDITOR=vi # fallback to vi if neither nvim nor vim are found
 fi
+neofetch
+

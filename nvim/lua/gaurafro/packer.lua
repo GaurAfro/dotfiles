@@ -56,7 +56,7 @@ use {
     "folke/which-key.nvim",
     config = function()
         vim.o.timeout = true
-        vim.o.timeoutlen = 300
+        vim.o.timeoutlen = 700
         require("which-key").setup {
             -- your configuration comes here
             -- or leave it empty to use the default settings

@@ -57,7 +57,7 @@ This function should only modify configuration layer settings."
      python
      prettier
      (org :variables
-          org-projectile-file "~/org-files/TODOs.org"
+          org-projectile-file "~/gaurafro-dotfiles/notes/org/TODOs.org"
           org-enable-notifications t
           org-start-notification-daemon-on-startup t
           org-todo-dependencies-strategy 'naive-auto
@@ -585,7 +585,7 @@ It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
   (setq-default git-magit-status-fullscreen t)
   (setq magit-repository-directories
-        '(("~/coding-projects/" . 5) ("~/org-files/" . 9) ("~/dotfiles/" . 9)))
+        '(("~/coding-projects/" . 5) ("~/gaurafro-dotfiles/notes/org/" . 9) ("~/dotfiles/" . 9)))
 
 )
 
@@ -607,11 +607,11 @@ before packages are loaded."
   
   ;; Org capture templates
   (setq org-capture-templates
-        '(("t" "Todo" entry (file+headline "~/org-files/TODOs.org" "Tasks")
+        '(("t" "Todo" entry (file+headline "~/gaurafro-dotfiles/notes/org/TODOs.org" "Tasks")
            "* TODO %?\n %i\n %a")))
   
   ;; Org agenda files
-  (setq org-agenda-files '("~/org-files/TODOs.org"))
+  (setq org-agenda-files '("~/gaurafro-dotfiles/notes/org/TODOs.org"))
   
   ;; Function to insert TODOs in dashboard
   (defun dashboard-insert-todos (list-size)
@@ -622,7 +622,7 @@ before packages are loaded."
          todos
          list-size
          "o"
-         `(find-file "~/org-files/TODOs.org")
+         `(find-file "~/gaurafro-dotfiles/notes/org/TODOs.org")
          "No TODOs found."))))
   
   ;; Function to archive DONE tasks
@@ -637,7 +637,7 @@ before packages are loaded."
     (let ((heading (org-get-heading t t t t))
           (file-name (buffer-file-name (buffer-base-buffer)))
           (state (org-get-todo-state)))
-      (with-current-buffer (find-file-noselect "~/org-files/TODOs.org")
+      (with-current-buffer (find-file-noselect "~/gaurafro-dotfiles/notes/org/TODOs.org")
         ;; Remove existing TODOs/DONEs with the same heading and link
         (org-map-entries
          (lambda ()

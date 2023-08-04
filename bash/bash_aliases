@@ -4,14 +4,20 @@
 alias b='bash'
 alias sb='source ~/.bashrc'
 alias sbp='source ~/.bash_profile'
+alias sba='source ~/.bash_aliases'
 alias sbrc='source ~/.bashrc'
 
+# nala aliases
+alias apt='nala'
+alias update='sudo nala update'
+alias upgrade='sudo nala upgrade -y'
+
 # # ls aliases
-alias ls='exa -al --color=always --group-directories-first'   # my preferred listing
-alias la='exa -a --color=always --group-directories-first'    # all files and dirs
-alias lah='exa -ahl --color=always --group-directories-first' # all files and dirs, long format
-alias ll='exa -l --color=always --group-directories-first'    # long format
-alias lt='exa -aT --color=always --group-directories-first'   # tree listing
+alias ls='exa -al --color=always --header --icons --group-directories-first' # my preferred listing
+alias la='exa -a --color=always --header --icons --group-directories-first'    # all files and dirs
+alias lah='exa -ahl --color=always --header --icons --group-directories-first' # all files and dirs, long format
+alias ll='exa -l --color=always --header --icons --group-directories-first'    # long format
+alias lt='exa -aT --color=always --header --icons --group-directories-first'   # tree listing
 alias l.='exa -a | egrep "^\."'
 
 # ssh aliases
@@ -28,16 +34,6 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias ~='cd ~'
 
-# git aliases
-alias g='git'
-alias gs='git status'
-alias ga='git add'
-alias gaa='git add --all'
-alias gc='git commit'
-alias gcm='git commit -m'
-alias gca='git commit --amend'
-alias gcam='git commit --amend -m'
-alias gpom='git push origin master'
 # git
 alias addup='git add -u'
 alias addall='git add .'
@@ -51,6 +47,20 @@ alias push='git push origin'
 alias stat='git status' # 'status' is protected name so using 'stat' instead
 alias tag='git tag'
 alias newtag='git tag -a'
+
+# GaurAfro GitHUb aliases
+alias gaurafro='cd $HOME/gaurafro-dotfiles'
+alias gdf='cd $HOME/gaurafro-dotfiles'
+alias updategd='update_gaurafro_dotfiles.sh'
+alias updatecp='update_coding_projects.sh'
+alias gcf='cd $HOME/.config'
+alias gdl='cd $HOME/Downloads'
+alias gdo='cd $HOME/Documents'
+alias gpi='cd $HOME/Pictures'
+alias gmu='cd $HOME/Music'
+alias gvi='cd $HOME/Videos'
+alias gcp='cd $HOME/coding-projects'
+alias gof='cd $HOME/gaurafro-dotfiles/notes/org'
 
 # neovim aliases
 alias v='nvim'
@@ -80,14 +90,14 @@ alias py='python3'
 alias py2='python2'
 alias py3='python3'
 alias pip='pip3'
-alias pip2='pip2'
-alias pip3='pip3'
 
 # emacs and doom aliases
 alias emacs='emacsclient -c -n'
 alias emacst='emacsclient -nw'
-alias doomt='emacsclient28 -c -n'
+alias doom='emacsclient28 -c -n'
 alias doomt='emacsclient28 -nw'
+alias space='emacsclient28 -c -n'
+alias spacet='emacsclient28 -nw'
 
 # NeoVim aliases
 # open ~/gaurafro-dotfiles
@@ -105,7 +115,7 @@ alias vbr='nvim ~/.bashrc'
 alias nbp='nvim ~/.bash_profile'
 alias vbp='nvim ~/.bash_profile'
 # open nvim config folder
-alias nc='nvim ~/.config/nvim/'
+alias nc='pushd ~/.config/nvim/ && nvim . && popd'
 alias vc='nvim ~/.config/nvim/'
 alias nnc='nvim ~/.config/nvim/'
 alias vnc='nvim ~/.config/nvim/'
